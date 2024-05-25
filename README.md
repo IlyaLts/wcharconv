@@ -1,6 +1,6 @@
 wcharconv
 ======
-Functions for converting between single-byte character string (char) and 2 byte wide character string (wchar_t).
+Functions for converting between a UTF-8 encoded single-byte character string (char) and a 2-byte wide character string (wchar_t).
 
 ### Usage
 ```
@@ -27,8 +27,8 @@ int main()
 
 | Functions | Descriptions |
 | --- | --- |
-| char_to_wchar(const char *from, wchar_t *to, size_t to_size) | Converts a single-byte character string to a 2 byte wide character string. |
-| wchar_to_char(const wchar_t *from, char *to, size_t to_size) | Converts a 2 byte wide character string to a single-byte character string. |
+| char_to_wchar(const char *from, wchar_t *to, size_t to_size) | Converts a UTF-8 encoded single-byte character string to a 2-byte wide character string. |
+| wchar_to_char(const wchar_t *from, char *to, size_t to_size) | Converts a 2-byte wide character string to a UTF-8 encoded single-byte character string. |
 
 
 ## License
